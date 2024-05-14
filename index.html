@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Image Gallery</h1>
+    <div class="filter-buttons">
+        <button data-filter="all">All</button>
+        <button data-filter="nature">Nature</button>
+        <button data-filter="architecture">Architecture</button>
+        <button data-filter="cars">Cars</button>
+    </div>
+    
+    <div class="gallery">
+        <div class="image" data-category="nature">
+            <img src="./img/natur.jpg">
+        </div>
+        <div class="image" data-category="nature">
+            <img src="./img/natur2.jpg">
+        </div>
+        <div class="image" data-category="nature">
+            <img src="./img/natur3.jpg">
+        </div>
+        <div class="image" data-category="architecture">
+            <img src="./img/arch.jpg">
+        </div>
+        <div class="image" data-category="architecture">
+            <img src="./img/arch2.jpg">
+        </div>
+        <div class="image" data-category="architecture">
+            <img src="./img/arch3.jpg">
+        </div>
+        <div class="image" data-category="cars">
+            <img src="./img/cars.jpg">
+        </div>
+        <div class="image" data-category="cars">
+            <img src="./img/cars2.jpg">
+        </div>
+        <div class="image" data-category="cars">
+            <img src="./img/cars3.jpg">
+        </div>
+        <!-- Aggiungi altre immagini con diverse categorie -->
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
